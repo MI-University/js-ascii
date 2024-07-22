@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Methods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>See the console plz</header>
+    <script>
+      function sum(arr) {
+        return arr.reduce((a, b) => a+b, 0)
+      }
+      function multiply(arr) {
+        return arr.reduce((a, b) => a*b, 1)
+      }
+      function reverse(str) {
+        return str.split("").reverse().join("")
+      }
+      function filterLongWords(arr, i) {
+        return arr.filter(w=> w.length > i)
+      }
+
+      console.log("input:", [1, 2, 3, 4], "output:", sum([1, 2, 3, 4]))
+      console.log("input:", [1, 2, 3, 4], "output:", multiply([1, 2, 3, 4]))
+      console.log("input:", "WAP 472", "output:", reverse("WAP 472"))
+      console.log("input:", ['one', 'five', 'seven'], 4, "output:", filterLongWords(['one', 'five', 'seven'], 4))
+    </script>
+  </body>
+</html>
